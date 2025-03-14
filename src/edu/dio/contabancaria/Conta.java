@@ -1,6 +1,7 @@
 package edu.dio.contabancaria;
 
 import java.text.MessageFormat;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Conta {
@@ -31,8 +32,19 @@ public class Conta {
     public void inicializarConta() {
 
         System.out.println("Por favor, digite o número da Conta!");
-        numero = scanner.nextInt();
-        scanner.nextLine();
+
+        var validarEntrada = true;
+        while (validarEntrada) {
+            try {
+                numero = scanner.nextInt();
+                validarEntrada = false;
+                scanner.nextLine();
+            } catch (InputMismatchException e) {
+                System.out.println("Erro: Entrada inválida. Digite um número inteiro.");
+                scanner.nextLine();
+            }
+
+        }
 
     }
 
@@ -46,8 +58,19 @@ public class Conta {
     public void inicializarSaldo() {
 
         System.out.println("Por favor, digite o Saldo da Conta!");
-        saldo = scanner.nextDouble();
-        scanner.nextLine();
+
+        var validarEntrada = true;
+        while (validarEntrada) {
+            try {
+                saldo = scanner.nextDouble();
+                validarEntrada = false;
+                scanner.nextLine();
+            } catch (InputMismatchException e) {
+                System.out.println("Erro: Entrada inválida. Digite um número com vírgula.");
+                scanner.nextLine();
+            }
+
+        }
 
     }
 
