@@ -52,7 +52,7 @@ public class Conta {
 
         System.out.println("Por favor, digite o nome do Cliente!");
         nomeCliente = scanner.nextLine();
-
+        nomeCliente = nomeCliente.toUpperCase();
     }
 
     public void inicializarSaldo() {
