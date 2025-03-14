@@ -20,5 +20,4 @@ Este projeto é um desafio da trilha Java básico da DIO, com o objetivo de apri
 - **Mensagem de exibição:** Após a inserção dos dados, o programa deve exibir uma mensagem com as informações da conta bancária no seguinte formato:
 
 ## Autor
-
-- \[Vinicius Basilio]
+Vinicius Basilio
