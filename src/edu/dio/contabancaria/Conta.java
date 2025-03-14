@@ -17,7 +17,7 @@ public class Conta {
 
     public void imprimeMensagem() {
         String mensagem = MessageFormat.format(
-                "\nOlá {0}, obrigado por criar uma conta em nosso banco, sua agência é {1}, conta {2} e seu saldo {3} já está disponível para saque\".",
+                "\nOlá {0}, obrigado por criar uma conta em nosso banco, sua agência é {1}, conta {2} e seu saldo {3,number,#.00} já está disponível para saque\".",
                 nomeCliente, agencia, numero, saldo);
         System.out.println(mensagem);
     }
@@ -52,13 +52,12 @@ public class Conta {
 
         System.out.println("Por favor, digite o nome do Cliente!");
         nomeCliente = scanner.nextLine();
-        nomeCliente = nomeCliente.toUpperCase();
+
     }
 
     public void inicializarSaldo() {
 
         System.out.println("Por favor, digite o Saldo da Conta!");
-
         var validarEntrada = true;
         while (validarEntrada) {
             try {
