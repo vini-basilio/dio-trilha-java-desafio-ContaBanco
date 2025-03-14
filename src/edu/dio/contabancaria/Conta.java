@@ -1,6 +1,7 @@
 package edu.dio.contabancaria;
 
 import java.text.MessageFormat;
+import java.util.Scanner;
 
 public class Conta {
     String agencia = "";
@@ -13,5 +14,13 @@ public class Conta {
                 "\n Olá {0}, obrigado por criar uma conta em nosso banco, sua agência é {1}, conta {2} e seu saldo {3} já está disponível para saque\".",
                 nomeCliente, agencia, numero, saldo);
         System.out.println(mensagem);
+    }
+
+    // Inicia scanner
+    Scanner scanner = new Scanner(System.in);
+
+    public void inicializarAgencia() {
+        System.out.println("\nPor favor, digite o número da Agência!");
+        agencia = scanner.nextLine();
     }
 }
