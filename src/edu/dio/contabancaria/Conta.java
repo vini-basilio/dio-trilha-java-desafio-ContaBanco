@@ -33,12 +33,11 @@ public class Conta {
 
         System.out.println("Por favor, digite o número da Conta!");
 
-        var validarEntrada = true;
-        while (validarEntrada) {
+        while (true) {
             try {
                 numero = scanner.nextInt();
-                validarEntrada = false;
                 scanner.nextLine();
+                break;
             } catch (InputMismatchException e) {
                 System.out.println("Erro: Entrada inválida. Digite um número inteiro.");
                 scanner.nextLine();
@@ -59,12 +58,11 @@ public class Conta {
     public void inicializarSaldo() {
 
         System.out.println("Por favor, digite o Saldo da Conta!");
-        var validarEntrada = true;
-        while (validarEntrada) {
+        while (true) {
             try {
                 saldo = scanner.nextDouble();
-                validarEntrada = false;
                 scanner.nextLine();
+                break;
             } catch (InputMismatchException e) {
                 System.out.println("Erro: Entrada inválida. Digite um número com vírgula.");
                 scanner.nextLine();
