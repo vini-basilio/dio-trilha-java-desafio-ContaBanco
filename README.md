@@ -1,18 +1,24 @@
-## Getting Started
+# Desafio: Simulação de Conta Bancária em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descrição
 
-## Folder Structure
+Este projeto é um desafio da trilha Java básico da DIO, com o objetivo de aprimorar o entendimento da sintaxe básica do Java através da simulação da interação com uma conta bancária no terminal.
 
-The workspace contains two folders by default, where:
+## Funcionalidades
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **Entrada de dados:** O programa solicita ao usuário que insira os dados da conta bancária, como número da agência, número da conta, nome do cliente e saldo.
+- **Exibição de informações:** Após a inserção dos dados, o programa exibe uma mensagem com as informações da conta bancária.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Requisitos
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- **Atributos:**
+  - `numero`: Número da conta (inteiro)
+  - `agencia`: Número da agência (texto)
+  - `nomeCliente`: Nome do cliente (texto)
+  - `saldo`: Saldo da conta (decimal)
+- **Entrada de dados via terminal:** O programa deve solicitar os dados da conta bancária ao usuário através do terminal.
+- **Mensagem de exibição:** Após a inserção dos dados, o programa deve exibir uma mensagem com as informações da conta bancária no seguinte formato:
 
-## Dependency Management
+## Autor
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- \[Vinicius Basilio]
