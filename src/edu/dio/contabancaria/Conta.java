@@ -16,21 +16,37 @@ public class Conta {
         System.out.println(mensagem);
     }
 
-    // Inicia scanner
-    Scanner scanner = new Scanner(System.in);
-
     public void inicializarAgencia() {
+        // Inicia scanner
+        Scanner scanner = new Scanner(System.in);
         System.out.println("\nPor favor, digite o número da Agência!");
         agencia = scanner.nextLine();
+        // Encerra scanner
+        scanner.close();
     }
 
     public void inicializarConta() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Por favor, digite o número da Conta!");
         numero = scanner.nextInt();
+        // Encerra scanner
+        scanner.close();
     }
 
     public void inicializarCliente() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Por favor, digite o nome do Cliente!");
         nomeCliente = scanner.nextLine();
+        // Encerra scanner
+        scanner.close();
     }
+
+    public void inicializarSaldo() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Por favor, digite o Saldo da Conta!");
+        saldo = scanner.nextDouble();
+        // Encerra scanner
+        scanner.close();
+    }
+
 }
