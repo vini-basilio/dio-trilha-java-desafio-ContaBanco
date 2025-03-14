@@ -17,7 +17,7 @@ public class Conta {
 
     public void imprimeMensagem() {
         String mensagem = MessageFormat.format(
-                "\nOlá {0}, obrigado por criar uma conta em nosso banco, sua agência é {1}, conta {2} e seu saldo {3,number,#.00} já está disponível para saque\".",
+                "\nOlá {0}, obrigado por criar uma conta em nosso banco, sua agência é {1}, conta {2} e seu saldo {3,number,#.00} já está disponível para saque.",
                 nomeCliente, agencia, numero, saldo);
         System.out.println(mensagem);
     }
