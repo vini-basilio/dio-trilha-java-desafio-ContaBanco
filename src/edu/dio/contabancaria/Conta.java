@@ -23,4 +23,9 @@ public class Conta {
         System.out.println("\nPor favor, digite o número da Agência!");
         agencia = scanner.nextLine();
     }
+
+    public void inicializarConta() {
+        System.out.println("Por favor, digite o número da Conta!");
+        numero = scanner.nextInt();
+    }
 }
